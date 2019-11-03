@@ -35,7 +35,7 @@ export default class Index extends Component {
     return (
       <View className='index'>
         <View className='title'>测试题</View>
-        {this.showQuestionModal?<AddQuestion onCloseQuestion={this.closeQuestion.bind(this)}/>:null}
+        {this.state.showQuestionModal?<AddQuestion onCloseQuestion={this.closeQuestion.bind(this)}/>:null}
         <Button onClick={this.addQuestion.bind(this)} className='btn-question'>提问</Button>
       </View>
     )
